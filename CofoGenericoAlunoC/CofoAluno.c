@@ -51,8 +51,9 @@ int cofoInsert(cofo *c, void *x){
             printf("\n");
             printf("Numero de Elementos: %d\n",c->elm);
             return 1;
-        }else
+        }else{
             printf("O Vetor ja está cheio!\n");
+        }
         return 0;
     }
     return 0;
@@ -125,6 +126,7 @@ aluno *alunoCreate(long int cpf,char *nome,int idade){
     }
     return NULL;
 }
+
 //COMPARA O CPF DO ALUNO COM A CHAVE ENVIADA
 int CmpCPFAluno(void *a, void *b){
     long *pa;
@@ -136,6 +138,7 @@ int CmpCPFAluno(void *a, void *b){
     }
     return FALSE;
 }
+
 //COMPARA NOME DO ALUNO COM A CHAVE ENVIADA
 int CmpNomeAluno(void *a, void*b){
     char *pa;
