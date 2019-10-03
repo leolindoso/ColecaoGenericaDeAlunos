@@ -12,14 +12,8 @@ int main() {
         //IMPRIME TODAS AS OPÇÕES NA TELA
         if (modo == 100){
             modo = 101;
-            printf("1 - Criar Coleção\n");
-            printf("2 - Criar e Inserir Aluno na Coleção\n");
-            printf("3 - Procurar Aluno na Coleção\n");
-            printf("4 - Remover Ultimo Aluno da Coleção\n");
-            printf("5 - Remover Aluno Escolhido da Coleção\n");
-            printf("6 - Destruir Coleção\n");
-            printf("0 - Sair\n");
-            printf("Escolha uma Opção: ");
+            printf("1 - Criar Coleção\n","2 - Criar e Inserir Aluno na Coleção\n","3 - Procurar Aluno na Coleção\n","4 - Remover Ultimo Aluno da Coleção\n","5 - Remover Aluno Escolhido da Coleção\n",
+            "6 - Destruir Coleção\n","0 - Sair\n","Escolha uma Opção: ");
             scanf("%i",&modo);
         }
         //ESCOLHE A OPÇÃO DE CRIAR A COLEÇÃO
