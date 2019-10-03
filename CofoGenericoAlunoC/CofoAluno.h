@@ -1,5 +1,12 @@
 #ifndef CofoAluno_H_INCLUDED
 #define CofoAluno_H_INCLUDED
+#ifndef TRUE
+#define TRUE 1
+#endif
+
+#ifndef FALSE
+#define FALSE 0
+#endif
 
 //CRIA ESTRUTURA DO TIPO ALUNO
 typedef struct _aluno_{
