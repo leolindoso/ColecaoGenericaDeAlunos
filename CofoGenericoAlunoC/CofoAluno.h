@@ -15,7 +15,7 @@ typedef struct _aluno_{
     int idade;
 }aluno;
 
-//CRIA COLEÇÃO
+//CRIA ESTRUTURA DO TIPO COLEÇÃO
 typedef struct _cofo_{
     int max;
     void **vet;
@@ -30,6 +30,7 @@ void *cofoQuery(cofo *c,void* key,int (*cmp)(void*,void*));
 void *cofoRemoveLast(cofo *c);
 aluno *alunoCreate(long int cpf,char *nome,int idade);
 void *cofoRemove(cofo *c,void *key,int (*cmp)(void*,void*));
+
 //HEADERS DO ALUNO
 int CmpCPFAluno(void *a, void *b);
 int CmpNomeAluno(void *a, void*b);
